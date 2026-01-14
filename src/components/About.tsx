@@ -1,4 +1,3 @@
-import React from "react";
 import DitherShader from "./ui/dither-shader";
 import Image1 from "../../public/nich1.jpg";
 const About = () => {

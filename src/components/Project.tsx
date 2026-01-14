@@ -1,4 +1,3 @@
-import React from "react";
 import { project } from "../data/project";
 import DitherShader from "./ui/dither-shader";
 const Project = () => {
