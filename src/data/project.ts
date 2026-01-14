@@ -1,27 +1,43 @@
-import sample from '../../public/test.jpg'
+import sample from "../../public/test.jpg";
 export const project = [
   {
     id: 1,
     name: "Modern Villa",
     image: sample,
     year: 2024,
+    subject: "Architecture 4",
+    program: "Educational / Research",
+    area: "5000 m2",
+    location: "Bahía Blanca, Argentina",
   },
   {
     id: 2,
     name: "Villa Classic",
     image: sample,
     year: 2025,
+    subject: "Architecture 4",
+    program: "Educational / Research",
+    area: "5000 m2",
+    location: "Bahía Blanca, Argentina",
   },
   {
     id: 3,
     name: "Bedroom",
     image: sample,
     year: 2025,
+    subject: "Architecture 4",
+    program: "Educational / Research",
+    area: "5000 m2",
+    location: "Bahía Blanca, Argentina",
   },
   {
     id: 4,
     name: "Bedroom",
     image: sample,
     year: 2025,
+    subject: "Architecture 4",
+    program: "Educational / Research",
+    area: "5000 m2",
+    location: "Bahía Blanca, Argentina",
   },
 ];
