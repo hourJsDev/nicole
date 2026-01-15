@@ -1,36 +1,36 @@
 // project 1
-import Project1Image from "../../public/project/1/p1.png";
-import Project1Image1 from "../../public/project/1/p1-1.jpg";
-import Project1Image2 from "../../public/project/1/p1-2.jpg";
-import Project1Image3 from "../../public/project/1/p1-3.jpg";
-import Project1Image4 from "../../public/project/1/p1-4.jpg";
-import Project1Image5 from "../../public/project/1/p1-5.jpg";
-import Project1Image6 from "../../public/project/1/p1-6.jpg";
-import Project1Image7 from "../../public/project/1/p1-7.jpg";
+import Project1Image from "/public/project/1/p1.png";
+import Project1Image1 from "/public/project/1/p1-1.jpg";
+import Project1Image2 from "/public/project/1/p1-2.jpg";
+import Project1Image3 from "/public/project/1/p1-3.jpg";
+import Project1Image4 from "/public/project/1/p1-4.jpg";
+import Project1Image5 from "/public/project/1/p1-5.jpg";
+import Project1Image6 from "/public/project/1/p1-6.jpg";
+import Project1Image7 from "/public/project/1/p1-7.jpg";
 // project 2
-import Project2Image from "../../public/project/2/p2.jpg";
-import Project2Image1 from "../../public/project/2/p2-1.jpg";
-import Project2Image2 from "../../public/project/2/p2-2.jpg";
-import Project2Image3 from "../../public/project/2/p2-3.jpg";
-import Project2Image4 from "../../public/project/2/p2-4.jpg";
-import Project2Image5 from "../../public/project/2/p2-5.jpg";
-import Project2Image6 from "../../public/project/2/p2-6.jpg";
+import Project2Image from "/public/project/2/p2.jpg";
+import Project2Image1 from "/public/project/2/p2-1.jpg";
+import Project2Image2 from "/public/project/2/p2-2.jpg";
+import Project2Image3 from "/public/project/2/p2-3.jpg";
+import Project2Image4 from "/public/project/2/p2-4.jpg";
+import Project2Image5 from "/public/project/2/p2-5.jpg";
+import Project2Image6 from "/public/project/2/p2-6.jpg";
 // project 3
-import Project3Image from "../../public/project/3/p3.jpg";
-import Project3Image1 from "../../public/project/3/p3-1.jpg";
-import Project3Image2 from "../../public/project/3/p3-2.png";
-import Project3Image3 from "../../public/project/3/p3-3.png";
+import Project3Image from "/public/project/3/p3.jpg";
+import Project3Image1 from "/public/project/3/p3-1.jpg";
+import Project3Image2 from "/public/project/3/p3-2.png";
+import Project3Image3 from "/public/project/3/p3-3.png";
 // project 4
-import Project4Image from "../../public/project/4/p4.png";
-import Project4Image1 from "../../public/project/4/p4-1.jpg";
-import Project4Image2 from "../../public/project/4/p4-2.jpg";
-import Project4Image3 from "../../public/project/4/p4-3.png";
-import Project4Image4 from "../../public/project/4/p4-4.png";
-import Project4Image5 from "../../public/project/4/p4-5.png";
-import Project4Image6 from "../../public/project/4/p4-6.png";
-import Project4Image7 from "../../public/project/4/p4-7.png";
-import Project4Image8 from "../../public/project/4/p4-7.png";
-import Project4Image9 from "../../public/project/4/p4-7.png";
+import Project4Image from "/public/project/4/p4.png";
+import Project4Image1 from "/public/project/4/p4-1.jpg";
+import Project4Image2 from "/public/project/4/p4-2.jpg";
+import Project4Image3 from "/public/project/4/p4-3.png";
+import Project4Image4 from "/public/project/4/p4-4.png";
+import Project4Image5 from "/public/project/4/p4-5.png";
+import Project4Image6 from "/public/project/4/p4-6.png";
+import Project4Image7 from "/public/project/4/p4-7.png";
+import Project4Image8 from "/public/project/4/p4-7.png";
+import Project4Image9 from "/public/project/4/p4-7.png";
 export const project = [
   {
     id: 1,
