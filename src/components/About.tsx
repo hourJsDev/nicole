@@ -46,7 +46,7 @@ const About = () => {
     },
   ];
   return (
-    <div className="h-[100dvh] overflow-hidden relative bg-[#f5f5f5]">
+    <div id="about" className="h-[100dvh] overflow-hidden relative bg-[#f5f5f5]">
       <div className="flex top-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">Portfolio / Son SreyNich</p>
         <p className="desc">Curriculum Vitae</p>

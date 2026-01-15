@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     if (pathname && pathname.hash.includes("#project")) {
       setTimeout(() => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+        window.scrollTo({ top: document.body.scrollHeight - 1232, behavior: "smooth" });
       }, 10);
     }
   }, [pathname]);
