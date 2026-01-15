@@ -4,7 +4,7 @@ import Project1Image1 from "../assets/project/1/p1-1.jpg";
 import Project1Image2 from "../assets/project/1/p1-2.jpg";
 import Project1Image3 from "../assets/project/1/p1-3.jpg";
 import Project1Image4 from "../assets/project/1/p1-4.jpg";
-import Project1Image5 from "../assets/project/1/p1-5.jpg";
+import Project1Image5 from "../assets/project/1/p1-55.jpg";
 import Project1Image6 from "../assets/project/1/p1-6.jpg";
 import Project1Image7 from "../assets/project/1/p1-7.jpg";
 // project 2
