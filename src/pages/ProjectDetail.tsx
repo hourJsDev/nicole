@@ -15,7 +15,7 @@ const ProjectDetail = () => {
   
   return (
     <div className="bg-[#f5f5f5] pb-[30px]">
-      <div className="relative pt-[8%] ">
+      <div className="relative pt-[10%] ">
         <div className="flex top-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
           <p className="desc">Portfolio / Son SreyNich</p>
           <p className="desc">
