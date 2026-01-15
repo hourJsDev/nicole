@@ -21,16 +21,16 @@ import Project3Image1 from "../assets/project/3/p3-1.jpg";
 import Project3Image2 from "../assets/project/3/p3-2.png";
 import Project3Image3 from "../assets/project/3/p3-3.png";
 // project 4
-import Project4Image from "../assets/project/4/p4.png";
-import Project4Image1 from "../assets/project/4/p4-1.jpg";
-import Project4Image2 from "../assets/project/4/p4-2.jpg";
-import Project4Image3 from "../assets/project/4/p4-3.png";
-import Project4Image4 from "../assets/project/4/p4-4.png";
-import Project4Image5 from "../assets/project/4/p4-5.png";
-import Project4Image6 from "../assets/project/4/p4-6.png";
-import Project4Image7 from "../assets/project/4/p4-7.png";
-import Project4Image8 from "../assets/project/4/p4-7.png";
-import Project4Image9 from "../assets/project/4/p4-7.png";
+import Project4Image from "../assets/project/p4/p4.png";
+import Project4Image1 from "../assets/project/p4/p4-1.jpg";
+import Project4Image2 from "../assets/project/p4/p4-2.jpg";
+import Project4Image3 from "../assets/project/p4/p4-3.png";
+import Project4Image4 from "../assets/project/p4/p4-4.png";
+import Project4Image5 from "../assets/project/p4/p4-5.png";
+import Project4Image6 from "../assets/project/p4/p4-6.png";
+import Project4Image7 from "../assets/project/p4/p4-7.png";
+import Project4Image8 from "../assets/project/p4/p4-7.png";
+import Project4Image9 from "../assets/project/p4/p4-7.png";
 export const project = [
   {
     id: 1,
