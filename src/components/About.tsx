@@ -30,42 +30,36 @@ const About = () => {
       jobTitle: "Architectural Design Intern",
       company: "Chip Mong Group",
       date: "2024 - present",
-      jobDescription: [
-        "Created 3D models and renderings using Rhino and Enscape.",
-        "Assisted in producing schematic design sets and documentation.",
-      ],
+      jobDescription: ["Created 3D models and renderings using Rhino and Enscape.", "Assisted in producing schematic design sets and documentation."],
     },
     {
       jobTitle: "Freelance Design Assistant",
       company: "Chip Mong Group",
       date: "2024 - present",
-      jobDescription: [
-        "Designed conceptual floor plans for residential renovations.",
-        "Produced physical models via laser-cutting and 3D printing.",
-      ],
+      jobDescription: ["Designed conceptual floor plans for residential renovations.", "Produced physical models via laser-cutting and 3D printing."],
     },
   ];
   return (
-    <div id="about" className="h-[100dvh] overflow-hidden relative bg-[#f5f5f5]">
-      <div className="flex top-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
+    <div id="about" className="h-[100dvh] max-sm:overflow-auto max-sm:h-auto overflow-hidden relative bg-[#f5f5f5]">
+      <div className="flex max-sm:invisible top-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">Portfolio / Son SreyNich</p>
         <p className="desc">Curriculum Vitae</p>
       </div>
-      <div className="flex bottom-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
+      <div className="flex max-sm:invisible bottom-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">2021</p>
         <p className="desc">2025</p>
       </div>
-      <div className="flex gap-[100px] justify-center items-center h-full">
-        <div className="w-[40%] gap-[20px] justify-end flex">
+      <div className="flex gap-[100px] max-sm:gap-[20px] max-sm:flex-col-reverse justify-center items-center h-full">
+        <div className="w-[40%] max-sm:w-full max-sm:gap-[10px] gap-[20px] max-sm:flex-col max-sm:justify-center justify-end flex">
           <p className="main">.ABOUT ME</p>
-          <p className="w-[50%] mt-[30px] desc">
+          <p className="w-[50%] max-sm:w-full max-sm:w-full mt-[30px] max-sm:mt-0 desc">
             I am a [Year] Year Architecture student at [University Name] with a deep interest in how built environments shape human interaction. I believe that architecture is more
             than just structure; it is a medium for storytelling and social change. My design process focuses on sustainable materials and site-specific contexts, aiming to create
             spaces that feel as natural as the landscapes they inhabit. Outside of the studio, I spend my time sketching urban life, which fuels my understanding of scale and
             community movement.
           </p>
         </div>
-        <div className="flex-1 gap-[50px] flex">
+        <div className="flex-1 gap-[50px] flex max-sm:flex-col">
           <div className="flex flex-col ">
             <DitherShader
               src={Image1}
@@ -78,14 +72,16 @@ const About = () => {
               primaryColor="#000000"
               secondaryColor="#f5f5f5"
               threshold={0.6}
-              className="h-80 w-[200px]"
+              className="h-80 max-sm:h-[500px] max-sm:w-full w-[200px]"
             />
-            <p className="my-[10px] main">Son SreyNich</p>
-            <p className="desc">Phnom Penh , Cambodia.</p>
-            <p className="desc">sonsreynich@gmail.com</p>
-            <p className="desc">+855 92 35 12 84</p>
+            <div className=" max-sm:px-[15px]">
+              <p className="my-[10px] main">Son SreyNich</p>
+              <p className="desc">Phnom Penh , Cambodia.</p>
+              <p className="desc">sonsreynich@gmail.com</p>
+              <p className="desc">+855 92 35 12 84</p>
+            </div>
           </div>
-          <div className="grid gap-[30px] grid-cols-2">
+          <div className="grid max-sm:px-[15px] gap-[30px] grid-cols-2">
             <div>
               <p className="main">.EDUCATION</p>
               <ul className="flex mt-[15px] flex-col gap-[20px]">
@@ -116,7 +112,9 @@ const About = () => {
                     <p className="semi text-black">{e.jobTitle}</p>
                     <ul className="my-[5px]">
                       {e.jobDescription.map((jd, index) => (
-                        <li className="desc" key={index}>{jd}</li>
+                        <li className="desc" key={index}>
+                          {jd}
+                        </li>
                       ))}
                     </ul>
                     <p className="desc mt-[5px]">{e.date}</p>
