@@ -1,6 +1,11 @@
 import DitherShader from "./ui/dither-shader";
 import Image1 from "../../public/nich1.jpg";
+import { useMemo } from "react";
 const About = () => {
+  const year = useMemo(() => {
+    const date = new Date();
+    return date.getFullYear();
+  }, []);
   const softwares = [
     "Adobe Photoshop",
     "Adobe Illustrator",
@@ -60,6 +65,7 @@ const About = () => {
       ],
     },
   ];
+
   return (
     <div
       id="about"
@@ -71,7 +77,7 @@ const About = () => {
       </div>
       <div className="flex max-sm:invisible bottom-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">2021</p>
-        <p className="desc">2025</p>
+        <p className="desc">{year}</p>
       </div>
       <div className="flex gap-[100px] max-sm:gap-[20px] max-sm:flex-col-reverse justify-center items-center h-full">
         <div className="w-[40%] max-sm:w-full max-sm:gap-[10px] gap-[20px] max-sm:flex-col max-sm:justify-center justify-end flex">

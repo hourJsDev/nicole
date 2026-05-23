@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { ContainerTextFlip } from "./ui/container-text-flip";
 import DitherShader from "./ui/dither-shader";
 import LandingImage from "../../public/landingImage.png";
 // Using React.FC (Functional Component) provides type checking for children and return types
 const Landing: React.FC = () => {
+  const year = useMemo(() => {
+    const date = new Date();
+    return date.getFullYear();
+  }, []);
   return (
     <div className="h-[100dvh] max-sm:gap-[20px] max-sm:flex-col max-sm:flex overflow-hidden relative bg-[#e8e6e4]">
       <div className="flex z-10 top-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">2021</p>
-        <p className="desc">2025</p>
+        <p className="desc">{year}</p>
       </div>
       <div className="flex bottom-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">Architecture Design</p>
@@ -29,7 +33,10 @@ const Landing: React.FC = () => {
         />
       </div>
       <div className="absolute max-sm:relative z-[100] max-sm:left-none max-sm:left-[20px] max-sm:bottom-0 left-[5%] bottom-[20%]">
-        <ContainerTextFlip textClassName="text-[130px] max-sm:text-[50px] text-right" words={["Portfolio", "Architecture", "Interior"]} />
+        <ContainerTextFlip
+          textClassName="text-[130px] max-sm:text-[50px] text-right"
+          words={["Portfolio", "Architecture", "Interior"]}
+        />
       </div>
     </div>
   );
