@@ -19,7 +19,6 @@ const Landing: React.FC = () => {
           src={LandingImage}
           gridSize={1}
           ditherMode="bayer"
-          colorMode="grayscale"
           invert={false}
           animated={false}
           animationSpeed={0.02}

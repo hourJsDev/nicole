@@ -3,12 +3,15 @@ import { project } from "../data/project";
 import DitherShader from "./ui/dither-shader";
 const Project = () => {
   return (
-    <div id="project" className="h-[100dvh] flex justify-center items-center overflow-hidden relative bg-[#f7f7f7]">
+    <div
+      id="project"
+      className="min-h-[100dvh] flex justify-center items-center overflow-hidden relative bg-[#f7f7f7]"
+    >
       <div className="flex top-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">Portfolio / Son SreyNich</p>
         <p className="desc">Project</p>
       </div>
-      <div className="flex gap-[30px]">
+      <div className="grid mb-[20px] mt-[100px] grid-cols-4 gap-[30px]">
         {project.map((p, index) => (
           <Link key={p.id} to={`/project/${p.id}`}>
             <div className="cursor-pointer">
@@ -17,7 +20,6 @@ const Project = () => {
                 src={p.image}
                 gridSize={1}
                 ditherMode="bayer"
-                colorMode="grayscale"
                 invert={false}
                 animated={false}
                 animationSpeed={0.02}

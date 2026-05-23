@@ -1,8 +1,23 @@
 import DitherShader from "./ui/dither-shader";
 import Image1 from "../../public/nich1.jpg";
 const About = () => {
-  const softwares = ["Adobe Photoshop", "Adobe Illustrator", "AutoCAD", "SketchUp", "D5 Render"];
-  const habits = ["Sketching", "Modeling", "Organizing", "Saving", "Drafting", "Researching", "Archiving", "Resting"];
+  const softwares = [
+    "Adobe Photoshop",
+    "Adobe Illustrator",
+    "AutoCAD",
+    "SketchUp",
+    "D5 Render",
+  ];
+  const habits = [
+    "Sketching",
+    "Modeling",
+    "Organizing",
+    "Saving",
+    "Drafting",
+    "Researching",
+    "Archiving",
+    "Resting",
+  ];
   const educations = [
     {
       title: "Hight School",
@@ -30,17 +45,26 @@ const About = () => {
       jobTitle: "Architectural Design Intern",
       company: "Chip Mong Group",
       date: "2024 - present",
-      jobDescription: ["Created 3D models and renderings using Rhino and Enscape.", "Assisted in producing schematic design sets and documentation."],
+      jobDescription: [
+        "Created 3D models and renderings using Rhino and Enscape.",
+        "Assisted in producing schematic design sets and documentation.",
+      ],
     },
     {
       jobTitle: "Freelance Design Assistant",
       company: "Chip Mong Group",
       date: "2024 - present",
-      jobDescription: ["Designed conceptual floor plans for residential renovations.", "Produced physical models via laser-cutting and 3D printing."],
+      jobDescription: [
+        "Designed conceptual floor plans for residential renovations.",
+        "Produced physical models via laser-cutting and 3D printing.",
+      ],
     },
   ];
   return (
-    <div id="about" className="h-[100dvh] max-sm:overflow-auto max-sm:h-auto overflow-hidden relative bg-[#f5f5f5]">
+    <div
+      id="about"
+      className="h-[100dvh] max-sm:overflow-auto max-sm:h-auto overflow-hidden relative bg-[#f5f5f5]"
+    >
       <div className="flex max-sm:invisible top-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">Portfolio / Son SreyNich</p>
         <p className="desc">Curriculum Vitae</p>
@@ -53,10 +77,14 @@ const About = () => {
         <div className="w-[40%] max-sm:w-full max-sm:gap-[10px] gap-[20px] max-sm:flex-col max-sm:justify-center justify-end flex">
           <p className="main">.ABOUT ME</p>
           <p className="w-[50%] max-sm:w-full max-sm:w-full mt-[30px] max-sm:mt-0 desc">
-            I am a [Year] Year Architecture student at [University Name] with a deep interest in how built environments shape human interaction. I believe that architecture is more
-            than just structure; it is a medium for storytelling and social change. My design process focuses on sustainable materials and site-specific contexts, aiming to create
-            spaces that feel as natural as the landscapes they inhabit. Outside of the studio, I spend my time sketching urban life, which fuels my understanding of scale and
-            community movement.
+            I am a [Year] Year Architecture student at [University Name] with a
+            deep interest in how built environments shape human interaction. I
+            believe that architecture is more than just structure; it is a
+            medium for storytelling and social change. My design process focuses
+            on sustainable materials and site-specific contexts, aiming to
+            create spaces that feel as natural as the landscapes they inhabit.
+            Outside of the studio, I spend my time sketching urban life, which
+            fuels my understanding of scale and community movement.
           </p>
         </div>
         <div className="flex-1 gap-[50px] flex max-sm:flex-col">
@@ -65,19 +93,18 @@ const About = () => {
               src={Image1}
               gridSize={1}
               ditherMode="bayer"
-              colorMode="grayscale"
               invert={false}
               animated={false}
               animationSpeed={0.02}
               primaryColor="#000000"
               secondaryColor="#f5f5f5"
-              threshold={0.6}
+              threshold={1}
               className="h-80 max-sm:h-[500px] max-sm:w-full w-[200px]"
             />
             <div className=" max-sm:px-[15px]">
               <p className="my-[10px] main">Son SreyNich</p>
               <p className="desc">Phnom Penh , Cambodia.</p>
-              <p className="desc">sonsreynich@gmail.com</p>
+              <p className="desc">sonsreynich1212@gmail.com</p>
               <p className="desc">+855 92 35 12 84</p>
             </div>
           </div>
