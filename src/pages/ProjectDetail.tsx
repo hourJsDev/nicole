@@ -11,7 +11,7 @@ const ProjectDetail = () => {
     const projectDetail = project.find((p) => p.id === Number(id));
     return projectDetail;
   }, [id]);
-  
+
   return (
     <div className="bg-[#f5f5f5] mb-[30px]">
       <div className="relative pt-[10%] max-sm:pt-[90px] ">
@@ -26,7 +26,7 @@ const ProjectDetail = () => {
         </span>
         <div className="px-[8%] max-sm:px-[20px] ">
           <div className="flex justify-end max-sm:pb-[20px]">
-            <div className="border border-black max-sm:w-full w-[60%]">
+            <div className="border min-h-[200px] border-black max-sm:w-full w-[60%]">
               <ImageSkeleton src={pro?.image} className="w-full h-full" />
             </div>
           </div>
@@ -38,18 +38,18 @@ const ProjectDetail = () => {
                 <span>Subject: </span>
                 <span>{pro?.subject}</span>
               </p>
-              <p className="desc">
+              {/* <p className="desc">
                 <span>Program: </span>
                 <span>{pro?.program}</span>
-              </p>
-              <p className="desc">
+              </p> */}
+              {/* <p className="desc">
                 <span>Area: </span>
                 <span>{pro?.area}</span>
               </p>
               <p className="desc">
                 <span>Location: </span>
                 <span>{pro?.location}</span>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -58,10 +58,19 @@ const ProjectDetail = () => {
         <div className="mt-[60px]">
           <div className="flex bg-[#e8e6e4] p-[20px] max-w-[1000px] mx-auto gap-[10px] flex-col">
             {pro?.images.map((imgs, index) => (
-              <div className={`grid grid-cols-1 gap-4 lg:grid-cols-3 `} key={index}>
+              <div
+                className={`grid grid-cols-1 gap-4 lg:grid-cols-3 `}
+                key={index}
+              >
                 {imgs.map((img, idx) => (
-                  <div className={` ${!(index % 2) ? `${idx ? "lg:col-span-2" : ""}` : `${idx ? "" : "lg:col-span-2"}`}`} key={idx}>
-                    <ImageSkeleton className="w-full object-center h-full object-contain" src={img} />
+                  <div
+                    className={` ${!(index % 2) ? `${idx ? "lg:col-span-2" : ""}` : `${idx ? "" : "lg:col-span-2"}`}`}
+                    key={idx}
+                  >
+                    <ImageSkeleton
+                      className="w-full object-center h-full object-contain"
+                      src={img}
+                    />
                   </div>
                 ))}
               </div>

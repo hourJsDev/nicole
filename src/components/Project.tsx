@@ -5,13 +5,16 @@ const Project = () => {
   return (
     <div
       id="project"
-      className="min-h-[100dvh] flex justify-center items-center overflow-hidden relative bg-[#f7f7f7]"
+      className="min-h-[100dvh] gap-[20px] max-sm:pt-[300px] pt-[100px] flex flex-col  justify-center items-center overflow-hidden relative bg-[#f7f7f7]"
     >
       <div className="flex top-[5%] justify-between absolute w-[90%] left-[50%] -translate-x-[50%]">
         <p className="desc">Portfolio / Son SreyNich</p>
         <p className="desc">Project</p>
       </div>
-      <div className="grid mb-[20px] mt-[100px] grid-cols-4 gap-[30px]">
+      <div>
+        <h1>Please on project click to see project detail</h1>
+      </div>
+      <div className="grid max-sm:grid-cols-1  mb-[20px] grid-cols-4 gap-[30px]">
         {project.map((p, index) => (
           <Link key={p.id} to={`/project/${p.id}`}>
             <div className="cursor-pointer">

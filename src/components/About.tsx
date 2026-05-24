@@ -8,21 +8,12 @@ const About = () => {
   }, []);
   const softwares = [
     "Adobe Photoshop",
-    "Adobe Illustrator",
+    "V Ray",
     "AutoCAD",
     "SketchUp",
     "D5 Render",
   ];
-  const habits = [
-    "Sketching",
-    "Modeling",
-    "Organizing",
-    "Saving",
-    "Drafting",
-    "Researching",
-    "Archiving",
-    "Resting",
-  ];
+  const habits = ["Sketching", "Researching", "Archiving", "Resting"];
   const educations = [
     {
       title: "Hight School",
@@ -47,22 +38,14 @@ const About = () => {
   ];
   const experiences = [
     {
-      jobTitle: "Architectural Design Intern",
-      company: "Chip Mong Group",
-      date: "2024 - present",
-      jobDescription: [
-        "Created 3D models and renderings using Rhino and Enscape.",
-        "Assisted in producing schematic design sets and documentation.",
-      ],
+      jobTitle: "Architecture design",
+      company: "NOK Construction",
+      date: "JAN 2026 - MAY 2026",
     },
     {
-      jobTitle: "Freelance Design Assistant",
-      company: "Chip Mong Group",
-      date: "2024 - present",
-      jobDescription: [
-        "Designed conceptual floor plans for residential renovations.",
-        "Produced physical models via laser-cutting and 3D printing.",
-      ],
+      jobTitle: "Architecture Internship",
+      company: "STHABANAK ARCHITECT & DESIGN",
+      date: "JUNE 2025 - DEC 2025",
     },
   ];
 
@@ -79,18 +62,15 @@ const About = () => {
         <p className="desc">2021</p>
         <p className="desc">{year}</p>
       </div>
-      <div className="flex gap-[100px] max-sm:gap-[20px] max-sm:flex-col-reverse justify-center items-center h-full">
-        <div className="w-[40%] max-sm:w-full max-sm:gap-[10px] gap-[20px] max-sm:flex-col max-sm:justify-center justify-end flex">
+      <div className="flex  gap-[100px] max-sm:gap-[20px] max-sm:flex-col-reverse justify-center items-center h-full">
+        <div className="w-[40%] max-sm:w-full max-sm:px-[20px] max-sm:gap-[10px] gap-[20px] max-sm:flex-col max-sm:justify-center justify-end flex">
           <p className="main">.ABOUT ME</p>
           <p className="w-[50%] max-sm:w-full max-sm:w-full mt-[30px] max-sm:mt-0 desc">
-            I am a [Year] Year Architecture student at [University Name] with a
-            deep interest in how built environments shape human interaction. I
-            believe that architecture is more than just structure; it is a
-            medium for storytelling and social change. My design process focuses
-            on sustainable materials and site-specific contexts, aiming to
-            create spaces that feel as natural as the landscapes they inhabit.
-            Outside of the studio, I spend my time sketching urban life, which
-            fuels my understanding of scale and community movement.
+            Hello my name is SreyNich Son, As an architecture student, the
+            ultimate goal is to secure a job in a field upon graduation. During
+            my university life I wanted to find a job as an internship to
+            improve my skill in creative and to maximize my skill by giving my
+            contribution to the company as much as I able to give.
           </p>
         </div>
         <div className="flex-1 gap-[50px] flex max-sm:flex-col">
@@ -144,11 +124,12 @@ const About = () => {
                   <li className="desc" key={e.jobTitle}>
                     <p className="semi text-black">{e.jobTitle}</p>
                     <ul className="my-[5px]">
-                      {e.jobDescription.map((jd, index) => (
-                        <li className="desc" key={index}>
-                          {jd}
-                        </li>
-                      ))}
+                      {e.jobDescription?.length &&
+                        e.jobDescription.map((jd, index) => (
+                          <li className="desc" key={index}>
+                            {jd}
+                          </li>
+                        ))}
                     </ul>
                     <p className="desc mt-[5px]">{e.date}</p>
                   </li>

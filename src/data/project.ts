@@ -60,6 +60,20 @@ import Project7Image8 from "../assets/project/7/p8.png";
 import Project7Image9 from "../assets/project/7/p9.png";
 import Project7Image10 from "../assets/project/7/p10.png";
 import Project7Image11 from "../assets/project/7/p11.png";
+// project 8
+import Project8Image1 from "../assets/project/8/p1.png";
+import Project8Image2 from "../assets/project/8/p2.png";
+import Project8Image3 from "../assets/project/8/p3.png";
+import Project8Image4 from "../assets/project/8/p4.png";
+import Project8Image5 from "../assets/project/8/p5.png";
+import Project8Image6 from "../assets/project/8/p6.png";
+import Project8Image7 from "../assets/project/8/p7.png";
+import Project8Image8 from "../assets/project/8/p8.png";
+import Project8Image9 from "../assets/project/8/p9.png";
+import Project8Image10 from "../assets/project/8/p10.png";
+import Project8Image11 from "../assets/project/8/p11.png";
+import Project8Image12 from "../assets/project/8/p12.png";
+import Project8Image13 from "../assets/project/8/p13.png";
 
 export const project = [
   {
@@ -157,10 +171,10 @@ export const project = [
   },
   {
     id: 8,
-    name: "Church building",
+    name: "Church",
     image: Project7Image1,
     year: 2026,
-    subject: "Interior",
+    subject: "Architecture",
     program: "Freelance",
     area: "5000 m2",
     location: "Bahía Blanca, Argentina",
@@ -171,6 +185,25 @@ export const project = [
       [Project7Image7, Project7Image8],
       [Project7Image9, Project7Image10],
       [Project7Image11],
+    ],
+  },
+  {
+    id: 9,
+    name: "Modern Villa",
+    image: Project8Image1,
+    year: 2026,
+    subject: "Interior",
+    program: "Freelance",
+    area: "5000 m2",
+    location: "Bahía Blanca, Argentina",
+    images: [
+      [Project8Image1, Project8Image2],
+      [Project8Image3, Project8Image4],
+      [Project8Image5, Project8Image6],
+      [Project8Image7, Project8Image8],
+      [Project8Image9, Project8Image10],
+      [Project8Image11, Project8Image12],
+      [Project8Image13],
     ],
   },
 ];
