@@ -62,7 +62,7 @@ import Project7Image10 from "../assets/project/7/p10.png";
 import Project7Image11 from "../assets/project/7/p11.png";
 // project 8
 import Project8Image1 from "../assets/project/8/p1.png";
-import Project8Image2 from "../assets/project/8/p2.png";
+import Project8Image2 from "../assets/project/8/p22.png";
 import Project8Image3 from "../assets/project/8/p3.png";
 import Project8Image4 from "../assets/project/8/p4.png";
 import Project8Image5 from "../assets/project/8/p5.png";
