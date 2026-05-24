@@ -123,14 +123,14 @@ const About = () => {
                 {experiences.map((e) => (
                   <li className="desc" key={e.jobTitle}>
                     <p className="semi text-black">{e.jobTitle}</p>
-                    <ul className="my-[5px]">
+                    {/* <ul className="my-[5px]">
                       {e.jobDescription?.length &&
                         e.jobDescription.map((jd, index) => (
                           <li className="desc" key={index}>
                             {jd}
                           </li>
                         ))}
-                    </ul>
+                    </ul> */}
                     <p className="desc mt-[5px]">{e.date}</p>
                   </li>
                 ))}
