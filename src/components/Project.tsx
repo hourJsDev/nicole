@@ -12,7 +12,7 @@ const Project = () => {
         <p className="desc">Project</p>
       </div>
       <div>
-        <h1>Please on project click to see project detail</h1>
+        <h1>Please click on project to see project detail</h1>
       </div>
       <div className="grid max-sm:grid-cols-1  mb-[20px] grid-cols-4 gap-[30px]">
         {project.map((p, index) => (
